@@ -1,6 +1,5 @@
 import { type ClientSchema, a, defineData } from "@aws-amplify/backend";
 import { auth } from "../auth/resource";
-import { request, response } from "./bedrock";
 
 const schema = a.schema({
   RecipeIdea: a
@@ -30,5 +29,3 @@ export const data = defineData({
     defaultAuthorizationMode: "userPool",
   },
 });
-
-export { auth, request, response };
